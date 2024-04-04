@@ -4,6 +4,19 @@
 
 :root {
   --font-family-footer: 'Calibri';
+  --font-size-1: 64px;
+  --foot-size-subtitle: 42px;
+  --font-size-2: 64px;
+  --font-size-2-3: 50px; 
+  --font-size-4-5: 38px; 
+  --font-size-main: 28px;
+  --font-size-footer: 22px;
+  --font-size-page: 12px;
+  --font-size-code: 22px;
+}
+
+h2 {
+  font-size: var(--font-size-2);
 }
 
 section::after {
@@ -24,7 +37,6 @@ section.cols-2-cp {
 section.cols-2-cp h2,
 section.cols-2-cp h3 {
   grid-area: leftpanel;
-  font-size: var(--font-size-2-3);
 }
 section.cols-2-cp .ldiv {
   grid-area: leftpanel;
@@ -103,7 +115,47 @@ img.logo {
   bottom: 10%;
 }
 
+a {
+  font-size: 1rem;
+  padding:0 .2rem;
+}
 a::after {
   font-size: 0.6em;
   content: "\f0c1"; /* f148 f0c1 f08e f14c f0c6 */
+}
+
+section.cols-2-c {
+  overflow: visible;
+  display: grid;
+  gap: 1.5rem;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 15% 95%;
+  grid-template-areas:
+      "slideheading slideheading"
+      "leftpanel    rightpanel";
+}
+section.cols-2-c h2, section.cols-2-c h3 {
+  left: 5%;
+}
+section.cols-2-c .ldiv { 
+  grid-area: leftpanel; 
+  margin-top: -5%;
+}
+section.cols-2-c .rdiv { 
+  grid-area: rightpanel; 
+  margin-top: -5%;
+}
+section.cols-2-c .limg { 
+  grid-area: leftpanel; 
+  margin-top: -5%;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+section.cols-2-c .rimg { 
+  grid-area: rightpanel; 
+  margin-top: -5%;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
 }
