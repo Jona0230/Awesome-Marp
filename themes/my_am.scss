@@ -159,3 +159,46 @@ section.cols-2-c .rimg {
   align-items: center;  
   justify-content: center;
 }
+
+section.pin-3t {
+  overflow: visible;
+  display: grid;
+  gap: 1rem;
+  grid-template-rows: 7% 13% 80%;
+  grid-template-columns: 50% 50%;
+  grid-template-areas:
+      "slideheading slideheading"
+      "toppanel  toppanel"
+      "leftpanel rightpanel";
+}
+section.pin-3t h2, section.pin-3t h3 {
+  grid-area: slideheading;
+  font-size: var(--font-size-2-3);
+}
+section.pin-3t .tdiv { 
+  grid-area: toppanel; 
+}
+section.pin-3t .ldiv { 
+  grid-area: leftpanel; 
+}
+section.pin-3t .rdiv { 
+  grid-area: rightpanel; 
+}
+section.pin-3t .timg { 
+  grid-area: toppanel; 
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
+section.pin-3t .limg { 
+  grid-area: leftpanel;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+section.pin-3t .rimg { 
+  grid-area: rightpanel;
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+}
