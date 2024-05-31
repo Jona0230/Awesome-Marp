@@ -167,13 +167,20 @@ section.pin-3t {
   grid-template-rows: 7% 13% 80%;
   grid-template-columns: 50% 50%;
   grid-template-areas:
-      "slideheading rightslideheading"
+      "slideheading slideheading"
       "toppanel  toppanel"
       "leftpanel rightpanel";
 }
 section.pin-3t h2, section.pin-3t h3 {
   grid-area: slideheading;
   font-size: var(--font-size-2-3);
+  text-align: left;
+}
+section.pin-3t .hint {
+  grid-area: slideheading;
+  position: absolute;
+  right: 50px;
+  top: 30px;
 }
 section.pin-3t .tdiv { 
   grid-area: toppanel; 
