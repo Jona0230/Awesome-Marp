@@ -1,6 +1,6 @@
 /* @theme my_am */
 
-@import 'am_blue';
+@import 'am_dark';
 
 :root {
   --font-family-footer: 'Calibri';
@@ -208,4 +208,21 @@ section.pin-3t .rimg {
   display: flex;
   align-items: center;  
   justify-content: center;
+}
+section.cover_b h1 {
+  background-color: white;
+  color: var(--color-much);
+  top: 28%;
+}
+h1 {
+  font-family: var(--font-family-title); 
+  font-size: 72px;
+  color: var(--color-much);   
+}  
+section.cover_b h6 {
+  background-color: white;
+  color: var(--color-much);
+} 
+section.cover_b p {
+  bottom: 18%;
 }
